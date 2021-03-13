@@ -1,0 +1,16 @@
+title: How to Manifest
+description: 'Reading and comprehension 101. '
+template:
+  repo: how-to-manifest-template
+  name: how-to-manifest
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
